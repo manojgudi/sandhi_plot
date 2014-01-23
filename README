@@ -1,3 +1,5 @@
+Forked from: https://github.com/a-w-s/GNURadio-SBHS-Python
+
 
 GNURadio-SBHS-Python contains the setup files written in python for installing Data Acquisition Block for Single Board Heater System (SBHS) in GNURadio.  There are two blocks both written in python.
 
@@ -6,19 +8,19 @@ GNURadio-SBHS-Python contains the setup files written in python for installing D
 
 For detailed information visit: http://spoken-tutorial.org/wiki/index.php/GNURadio_Documentation#Open_Source_Data_Acquisition_System
 
-This package requires that gnuradio-core, python, matplotlib, hal, wxpython, numpy is already installed.  It also depends on some GNU Radio pre-requisites, such as Boost, Python2.6-dev and Cppunit.
+This package requires that Sandhi and all of its dependencies are installed correctly.
 
 For a complete list of Pre-requisites visit: http://gnuradio.org/redmine/wiki/gnuradio/BuildGuide
 
 To build and compile do the following inside the directory:
 
-	$ sudo autoconf
-	$ sudo ./bootstrap
-	$ sudo ./configure
+	$ autoconf
+	$ ./bootstrap
+	$ ./configure
 	$ cd swig
-	$ sudo make generate-makefile-swig
+	$ make generate-makefile-swig
 	$ cd ..
-	$ sudo make
-	$ sudo make install
+	$ make
+	$ make install
 	$ sudo ldconfig
 
